@@ -1,0 +1,10 @@
+- hosts: local
+  tasks:
+    - name: Install Git
+      apt: pkg=git state=installed update_cache=true
+    - name: Download git-prompt
+      get_url: url=https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh dest=~/.git-prompt.sh mode=775
+    - name: Install Emacs
+      apt: pkg=emacs state=installed update_cache=true
+    - name: Install OpenJDK 8
+      apt: pkg=openjdk-8-jdk state=installed update_cache=true
