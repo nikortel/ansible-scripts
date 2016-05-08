@@ -8,3 +8,11 @@
       apt: pkg=emacs state=installed update_cache=true
     - name: Install OpenJDK 8
       apt: pkg=openjdk-8-jdk state=installed update_cache=true
+    - name: Install tmux
+      apt: pkg=tmux state=installed update_cache=true
+    - name: Install KDiff3
+      apt: pkg=kdiff3 state=installed update_cache=true
+    - name: Install Git-Cola
+      apt: pkg=git-cola state=installed update_cache=true
+      
+    
